@@ -3,8 +3,8 @@ let app = express();
 
 const PORT = process.env.PORT || 5000
 
-app.get('/', ( req, ros) => {
+app.get('/', ( req, res) => {
 
     res.send('Server 1s working properly');
 });
-app.Listen(PORT, () => Console.log("Server is up"));
+app.listen(PORT, () => console.log("Server is up"));
